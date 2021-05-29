@@ -4,9 +4,11 @@ import linked.CircleLinkedList;
 import linked.DoubleLinkedList;
 import linked.DoubleNode;
 import linked.Node;
+import org.junit.Test;
 
 public class TestDoubleLinkedList {
 
+    @Test
     public void test(){
         DoubleNode cake = new DoubleNode(777, "DQ");DoubleNode icecream = new DoubleNode(888, "Haagen-dazs");DoubleNode milktea = new DoubleNode(999, "SexyTea");
         DoubleLinkedList linkedList = new DoubleLinkedList();

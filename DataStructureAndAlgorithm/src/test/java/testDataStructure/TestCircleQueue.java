@@ -5,7 +5,8 @@ import arrayandqueue.CircleQueue;
 import java.util.Scanner;
 
 public class TestCircleQueue {
-    public static void main(String[] args){
+
+    public void testQueue() {
         System.out.print("输入创建数组的大小:");
         Scanner scanner = new Scanner(System.in);
         int capacity = scanner.nextInt();

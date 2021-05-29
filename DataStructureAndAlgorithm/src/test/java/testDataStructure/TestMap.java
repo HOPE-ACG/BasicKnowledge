@@ -1,13 +1,11 @@
-package test;
+package testDataStructure;
 
 import dfsandbfs.AdjoiningMatrixMap;
 import dfsandbfs.BFS;
 import dfsandbfs.DFS;
-import org.junit.jupiter.api.Test;
 
 public class TestMap {
 
-    @Test
     public void testAdjoiningMatrixMap() {
 
         AdjoiningMatrixMap map = new AdjoiningMatrixMap();

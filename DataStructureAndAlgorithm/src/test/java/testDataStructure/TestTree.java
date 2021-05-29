@@ -1,7 +1,6 @@
 package testDataStructure;
 
 import binarytree.*;
-import org.junit.jupiter.api.Test;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -171,7 +170,6 @@ public class TestTree {
         binarySortTree.infix();
     }
 
-    @Test
     public void testAVL() {
 
         SortTreeNode dog = new SortTreeNode(25);

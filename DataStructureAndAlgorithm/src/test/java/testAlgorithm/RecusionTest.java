@@ -3,7 +3,7 @@ package testAlgorithm;
 import recursion.EightQueen;
 import recursion.Labyrinth;
 
-public class TestRecusion {
+public class RecusionTest {
 
     public void testMaze(){
         Labyrinth l = new Labyrinth(10, 20);

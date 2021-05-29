@@ -1,9 +1,11 @@
 package testAlgorithm;
 
 import dynamic.Knapsack;
+import org.junit.Test;
 
-public class DynamicProgramming {
+public class DynamicProgrammingTest {
 
+    @Test
     public void testDyPro(){
 
 

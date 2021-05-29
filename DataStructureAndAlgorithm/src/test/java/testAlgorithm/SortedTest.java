@@ -5,7 +5,7 @@ import sequence.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class TestSorted {
+public class SortedTest {
 
     public void testBubble(){ //7s/6s
         //int[] nums = {5,35,1,2,56,21,14,8};
