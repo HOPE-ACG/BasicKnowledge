@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="testAlgorithm.DynamicProgrammingTest" time="0" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="testAlgorithm.EightAlgoTest" time="0.012" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2020.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -65,5 +65,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="testAlgorithm.DynamicProgrammingTest" name="testDyPro" time="0"/>
+  <testcase classname="testAlgorithm.EightAlgoTest" name="testHanoiTower" time="0.012"/>
 </testsuite>
