@@ -13,10 +13,6 @@ public class AVLTree {
      */
     private SortTreeNode root;
 
-    public SortTreeNode getRoot() {
-        return root;
-    }
-
     /**
      * Add node to tree vid comparing to node's number
      * @param addedNode being added node
