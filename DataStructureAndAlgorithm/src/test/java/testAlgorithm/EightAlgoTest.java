@@ -1,6 +1,8 @@
 package testAlgorithm;
 
+import eightalgorithm.BusStationConstruction;
 import eightalgorithm.HanoiTower;
+import eightalgorithm.RoadConstruction;
 import eightalgorithm.TelevisionStation;
 import org.junit.Test;
 
@@ -22,5 +24,19 @@ public class EightAlgoTest {
         station.add("南北通话电台", "杭州", "大连");
 
         station.optimumChoice();
+    }
+
+    @Test
+    public void testRoadConstruction() {
+        RoadConstruction roadConstruction = new RoadConstruction();
+        roadConstruction.showMap();
+        roadConstruction.mst();
+    }
+
+    @Test
+    public void testBusStationConstruction() {
+        BusStationConstruction busStationConstruction = new BusStationConstruction();
+        busStationConstruction.showMap();
+        busStationConstruction.kruskal();
     }
 }
