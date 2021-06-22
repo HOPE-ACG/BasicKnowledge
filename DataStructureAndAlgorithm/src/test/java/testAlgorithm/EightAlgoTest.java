@@ -1,10 +1,9 @@
 package testAlgorithm;
 
-import eightalgorithm.BusStationConstruction;
-import eightalgorithm.HanoiTower;
-import eightalgorithm.RoadConstruction;
-import eightalgorithm.TelevisionStation;
+import eightalgorithm.*;
 import org.junit.Test;
+
+import java.awt.*;
 
 public class EightAlgoTest {
 
@@ -38,5 +37,11 @@ public class EightAlgoTest {
         BusStationConstruction busStationConstruction = new BusStationConstruction();
         busStationConstruction.showMap();
         busStationConstruction.kruskal();
+    }
+
+    @Test
+    public void testKnightTravel() {
+        KnightTravel knightTravel = new KnightTravel(new Point(3, 2));
+        knightTravel.gameStart();
     }
 }
