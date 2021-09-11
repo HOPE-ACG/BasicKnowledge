@@ -5,7 +5,7 @@ import java.util.Stack;
 public class RegularExpressionMatch {
 
     public static void main(String[] args) {
-        boolean res = new RegularExpressionMatch().isMatch("ad", "asd");
+        boolean res = new RegularExpressionMatch().isMatch("abb", "bbb*");
         System.out.println(res);
     }
 
@@ -28,6 +28,7 @@ public class RegularExpressionMatch {
                 pp.push(p.charAt(i));
             }
         }
+        char record = ' ';
         while(!pp.empty() && !ss.empty()) {
             char cur_p = pp.pop();
             char cur_s = ss.pop();
@@ -35,22 +36,34 @@ public class RegularExpressionMatch {
                 char next_p = pp.empty()?' ':pp.pop();
                 if(next_p == ' ') return false;
                 if(next_p != '.') {
-                    if(next_p != cur_s) return false;
+                    if(next_p != cur_s) {
+                        ss.push(cur_s);
+                        continue;
+                    }
                     while(cur_s == next_p && !ss.empty()) cur_s = ss.pop();
                     if(cur_s != next_p) ss.push(cur_s);
+                    record = next_p;
                 }else {
                     char next2_p = pp.empty()?' ':pp.pop();
                     while(cur_s != next2_p && !ss.empty()) cur_s = ss.pop();
                     if(cur_s == next2_p) ss.push(cur_s);
+                    pp.push(next2_p);
+                    record = ' ';
                 }
             }else {
-                if(cur_p != cur_s) return false;
+                if(cur_p == record) continue;
+                if(cur_p != '.' && cur_p != cur_s) return false;
             }
         }
         if(!ss.empty()) return false;
-        if(!pp.empty()) {
-            if(pp.size() > 2) return false;
-            return pp.pop() == '*';
+        while(!pp.empty()) {
+            char ch = pp.pop();
+            if(ch == '*') {
+                pp.pop();
+                continue;
+            }
+            if(ch == record) continue;
+            return false;
         }
         return true;
     }
