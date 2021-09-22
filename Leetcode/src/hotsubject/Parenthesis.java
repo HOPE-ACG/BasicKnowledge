@@ -6,8 +6,9 @@ import java.util.List;
 public class Parenthesis {
 
     public static void main(String[] args) {
-//        List<String> parent = new Parenthesis().generateParenthesis(10);
-        List<String> parent = new Parenthesis().generateParenthesis2(3);
+        List<String> parent = new Parenthesis().generateParenthesis(10);
+        List<String> parent2 = new Parenthesis().generateParenthesis2(3);
+        System.out.println(parent2);
         System.out.println(parent);
     }
 
