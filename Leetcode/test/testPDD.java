@@ -14,6 +14,7 @@ public class testPDD {
         System.out.println(i);
     }
 
+
     @Test
     public void testReverseKGroup() {
 
@@ -30,15 +31,15 @@ public class testPDD {
     @Test
     public void testMergeKLists() {
 
-        MergeKLists.Node[] lists = new MergeKLists.Node[1];
-        MergeKLists.Node node1 = new MergeKLists.Node(5);
-        MergeKLists.Node node2 = new MergeKLists.Node(10);
-        MergeKLists.Node node3 = new MergeKLists.Node(2);
+        MergeKLists.ListNode[] lists = new MergeKLists.ListNode[1];
+        MergeKLists.ListNode node1 = new MergeKLists.ListNode(5);
+        MergeKLists.ListNode node2 = new MergeKLists.ListNode(10);
+        MergeKLists.ListNode node3 = new MergeKLists.ListNode(2);
         node1.next = node2;
         node2.next = node3;
         lists[0] = node1;
 
-        MergeKLists.Node node = new MergeKLists().mergeKLists(lists);
+        MergeKLists.ListNode node = new MergeKLists().mergeKLists(lists);
         while(node != null) {
             System.out.printf("%d\t", node.val);
             node = node.next;

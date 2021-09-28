@@ -24,13 +24,13 @@ public class HeapSort {
      * First build a big-peak-head form, and then exchange elements.Put biggest
      * element into the end of array
      */
-    public void bigPeakHeap(){
+    public void bigPeakHeap() {
         int length = nums.length;
-        for(int index = length / 2 - 1;index >= 0;index--){
+        for(int index = length / 2 - 1;index >= 0;index--) {
             bigPeakHeapSort(length, index);
         }
         int temp;
-        while(length > 1){
+        while(length > 1) {
             temp = nums[length - 1];
             nums[length - 1] = nums[0];
             nums[0] = temp;
@@ -45,7 +45,7 @@ public class HeapSort {
      * @param length the length of sorted elements
      * @param pos big peak position
      */
-    private void bigPeakHeapSort(int length, int pos){
+    private void bigPeakHeapSort(int length, int pos) {
         int temp = nums[pos];
         for(int i = 2 * pos + 1;i < length;i = 2 * i + 1){
             if(i + 1 < length && nums[i + 1] > nums[i]){
