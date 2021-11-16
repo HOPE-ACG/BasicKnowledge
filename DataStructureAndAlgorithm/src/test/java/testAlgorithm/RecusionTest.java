@@ -1,5 +1,6 @@
 package testAlgorithm;
 
+import org.junit.Test;
 import recursion.EightQueen;
 import recursion.Labyrinth;
 
@@ -11,6 +12,7 @@ public class RecusionTest {
         l.gameStart2();
     }
 
+    @Test
     public void testQueen(){
         EightQueen queen = new EightQueen();
         queen.gameStart();
